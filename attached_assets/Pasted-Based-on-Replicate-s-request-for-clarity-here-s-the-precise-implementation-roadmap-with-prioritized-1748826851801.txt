@@ -1,0 +1,106 @@
+Based on Replicate's request for clarity, here's the precise implementation roadmap with prioritized components. We'll focus on the **complete Tetralto website** but deliver it in phased modules that match your 90-day roadmap:
+
+### 🚀 Phased Development Plan for Replicate
+**Phase 1: Core Foundation (Weeks 1-2)**  
+```prompt
+[SYSTEM] Build the Tetralto homepage with these EXACT elements:
+1. HERO SECTION:
+   - Full-screen drone video background (placeholder: roof-time-lapse.mp4)
+   - Headline: "Precision Roof Protection" in Comfortaa Bold 48px (#F25C26)
+   - Subhead: "AI-Powered Analysis • Instant AR Previews • Storm-Ready" in Comfortaa 24px (#FFFFFF)
+   - CTA: Animated "Free Drone Inspection" button (#F7DF4E with #F25C26 hover)
+
+2. TRUST ARCHITECTURE:
+   - Live counter: "1,247 roofs protected" (animated GSAP ticker)
+   - Badge wall: GAF/BBB certifications (SVG icons)
+   - 40-min guarantee clock (real-time countdown component)
+
+3. NAVIGATION:
+   - Sticky header with #00D1C1 background
+   - Menu: Home • Analyzer • Visualizer • Services • Contact
+   - Emergency CTA: Rainbow gradient bar changing on scroll
+
+[REQUIREMENTS]
+- Next.js 14 (App Router)
+- Tailwind CSS with brand color variables
+- Framer Motion for animations
+- Responsive mobile layout
+```
+
+**Phase 2: AI Roof Expert Analyzer (Weeks 3-4)**  
+```prompt
+[SYSTEM] Create the "Tetralto Roof Expert" analysis tool:
+1. USER INTERFACE:
+   - Upload zone: "Upload roof photo" (#E07A5F border)
+   - "Analyze Now" button (#00D1C1 with loading animation)
+
+2. ANALYSIS DISPLAY:
+   - Canvas showing damage highlights (red overlays)
+   - Report card: Estimated repair cost • Severity score • Recommended actions
+   - "Get Full Inspection" CTA (#F25C26)
+
+3. TECHNICAL:
+   - TensorFlow.js mock integration (simulate 5s processing)
+   - Roofr API schema ready
+   - Mobile-responsive results panel
+
+[REQUIREMENTS]
+- Next.js API route for processing simulation
+- CanvasJS for visual annotations
+- PDF generator for "Roof Health Checklist"
+```
+
+**Phase 3: AR Material Studio (Weeks 5-6)**  
+```prompt
+[SYSTEM] Develop the AR shingle visualizer:
+1. MOBILE INTERFACE:
+   - "View on Your Roof" button (#F7DF4E) triggering camera
+   - Material selector: Shingle • Metal • Tile (thumbnails)
+
+2. AR FUNCTIONALITY:
+   - Three.js plane projection on camera feed
+   - Real-time texture swapping (3 material samples)
+   - Slider: #E07A5F handle for adjust intensity
+
+3. DESKTOP FALLBACK:
+   - 3D house model with interactive material switcher
+   - "Scan QR for Mobile AR" prompt
+
+[REQUIREMENTS]
+- 8th Wall free trial integration
+- Spline 3D asset loader
+- Responsive camera permissions handling
+```
+
+### ✅ Why This Phased Approach Works
+1. **Replicate-Friendly**  
+   Breaks complex features into standalone components
+2. **Progressive Enhancement**  
+   Builds from static → interactive → AI/AR features
+3. **Brand Consistency**  
+   Enforces colors/fonts early in Phase 1
+4. **Testable Milestones**  
+   Each phase delivers working functionality
+
+### 🔧 Technical Setup Guide
+1. **Create Repo**  
+   ```bash
+   npx create-next-app@latest tetralto
+   cd tetralto
+   npm install three.js @react-three/fiber framer-motion tensorflow/tfjs
+   ```
+2. **Add Brand Assets**  
+   - `styles/globals.css` with Comfortaa + color variables
+   - `/public/videos/drone-bg.mp4` placeholder
+   - `/public/svgs/trust-badges` folder
+
+3. **Implement Phase 1**  
+   Paste Phase 1 prompt into Replicate → test homepage locally
+
+### ⚠️ Critical First Step
+**Run Phase 1 Prompt in Replicate NOW** to validate:  
+- Brand color implementation  
+- Comfortaa font rendering  
+- Animation performance  
+
+I recommend starting with Phase 1 immediately while I prepare the optimized prompts for Phases 2-3. Would you like me to elaborate on the Phase 1 prompt?

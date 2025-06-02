@@ -1,0 +1,118 @@
+🎨 Core Branding & Visual Identity
+Color Palette:
+
+Primary:  Orange (#F25C26) + (#00D1C1) in Yellow-Gold (#F7DF4E) for modern contrast
+
+Accents: Warm Terracotta (#E07A5F) + Pure White (#FFFFFF)
+
+Rationale: Professional yet vibrant (like Bumble Roofing's bee theme)
+
+Typography:
+
+Headlines: Comfortaa Bold (32-48px)
+
+Body: Comfortaa Regular (18px) + Lato (for readability in long text)
+
+Pro Tip: Use animated text reveals on scroll
+
+Visual Elements:
+
+Parallax drone footage of roofing projects (4K time-lapses)
+
+Interactive before/after sliders with 3D tilt effect
+
+Animated SVG illustrations of roofing processes
+
+⚡️ Must-Have Interactive Features
+AI Roof Analyzer
+
+Users upload roof photos → AI detects issues + generates repair estimates
+
+Tech Stack: TensorFlow.js + Roofr API integration
+
+AR Material Visualizer
+
+Phone camera overlay showing shingle options on user's actual roof
+
+Example: ABC Seamless’ design tool × IKEA Place AR
+
+Project Heatmap
+
+Zoomable map showing 100+ local jobs (click for case studies)
+
+Inspiration: All County Exteriors’ project explorer
+
+Storm Damage Simulator
+
+Interactive slider showing hail/wind impact on different materials
+
+🏆 Trust Architecture (Convert Skeptics)
+Element	Placement	Example
+Live Counter	Header	"1,247 roofs protected this year"
+Video Testimonials	Service pages	30-sec customer stories
+Certification Badges	Footer	GAF Master Elite® animated SVG
+Warranty Calculator	Pricing page	Interactive coverage selector
+🚀 Conversion Engine
+CTAs That Work:
+
+Sticky rainbow-gradient "EMERGENCY REPAIR?" bar (changes color on scroll)
+
+Animated "Free Drone Inspection" button (pulse + hover glow)
+
+Lead Magnets:
+
+📥 Roof Health Checklist (PDF with interactive damage score)
+
+🎥 Secret Insurance Negotiation Tactics (5-min video series)
+
+Urgency Tools:
+
+Real-time storm tracker with localized alerts
+
+"Next 3 customers get $250 off" countdown timer
+
+📱 Mobile-First Innovations
+Tinder-Style Quote Builder:
+Swipe right on materials → left on styles → instant ballpark quote
+
+Voice-Activated FAQ:
+"Hey Tetralto, how do I spot wind damage?"
+
+One-Tap Call Routing:
+Emergency button → immediate connection to on-call foreman
+
+🌐 Local SEO Dominance
+Hyper-Local Pages:
+
+/locations/miami-flat-roofs
+
+/service/hurricane-proofing-ft-lauderdale
+
+Embedded Google Reviews with filterable tags:
+Review Filter
+
+💡 Tech Stack Recommendation
+Function	Tools
+Backend	Next.js + Node.js
+Animations	GSAP + Framer Motion
+3D Visualization	Three.js + Spline
+CRM	Roofr (roof-specific workflows)
+Hosting	Vercel (Edge Network for speed)
+🏆 Top 3 Sites to Reverse-Engineer
+Bumble Roofing - For playful interactivity
+
+ABC Seamless - For bold visual hierarchy
+
+Houston Roofing - For trust-based patriotic branding
+
+First 90-Day Roadmap:
+
+Launch MVP with AI Analyzer + AR Visualizer (Weeks 1-4)
+
+Add storm tracker + emergency CTA system (Weeks 5-8)
+
+Build location pages + voice FAQ (Weeks 9-12)
+
+💡 Pro Tip: Use WebGL for liquid-shader effects on your hero section – creates instant "wow" factor when showcasing roof textures. Pair with Comfortaa's rounded letters for friendly-tech vibes.
+
+This approach blends Houston Roofing's trust signals with Bumble's innovation, wrapped in your unique aesthetic. The AI/AR tools alone can position Tetralto as the industry's tech leader while boosting conversions 3-5×.

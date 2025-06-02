@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+:root {
+  --background: 210 11% 98%; /* #F5F7FA */
+  --foreground: 210 11% 8%; /* #1A1D23 */
+  --muted: 210 11% 96%; /* #F1F3F6 */
+  --muted-foreground: 210 6% 45%; /* #6B7280 */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 210 11% 8%; /* #1A1D23 */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 210 11% 8%; /* #1A1D23 */
+  --border: 210 11% 90%; /* #E5E7EB */
+  --input: 210 11% 90%; /* #E5E7EB */
+  --primary: 8 86% 55%; /* #F25C26 */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF */
+  --secondary: 176 100% 41%; /* #00D1C1 */
+  --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+  --accent: 46 100% 64%; /* #F7DF4E */
+  --accent-foreground: 210 11% 8%; /* #1A1D23 */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+  --ring: 8 86% 55%; /* #F25C26 */
+  --radius: 0.5rem;
+  
+  /* Tetralto brand colors */
+  --tetralto-orange: 8 86% 55%; /* #F25C26 */
+  --tetralto-teal: 176 100% 41%; /* #00D1C1 */
+  --tetralto-gold: 46 100% 64%; /* #F7DF4E */
+  --tetralto-terracotta: 12 70% 65%; /* #E07A5F */
+}
+
+.dark {
+  --background: 210 11% 4%; /* #0A0C10 */
+  --foreground: 210 11% 98%; /* #F5F7FA */
+  --muted: 210 11% 8%; /* #1A1D23 */
+  --muted-foreground: 210 6% 65%; /* #9CA3AF */
+  --popover: 210 11% 4%; /* #0A0C10 */
+  --popover-foreground: 210 11% 98%; /* #F5F7FA */
+  --card: 210 11% 4%; /* #0A0C10 */
+  --card-foreground: 210 11% 98%; /* #F5F7FA */
+  --border: 210 11% 20%; /* #374151 */
+  --input: 210 11% 20%; /* #374151 */
+  --primary: 8 86% 55%; /* #F25C26 */
+  --primary-foreground: 0 0% 100%; /* #FFFFFF */
+  --secondary: 176 100% 41%; /* #00D1C1 */
+  --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+  --accent: 46 100% 64%; /* #F7DF4E */
+  --accent-foreground: 210 11% 8%; /* #1A1D23 */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+  --ring: 8 86% 55%; /* #F25C26 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-comfortaa antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-comfortaa {
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  .gradient-animation {
+    background: linear-gradient(-45deg, hsl(var(--tetralto-orange)), hsl(var(--tetralto-teal)), hsl(var(--tetralto-gold)), hsl(var(--tetralto-terracotta)));
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  .pulse-ring {
+    animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+  }
+  
+  .trust-badge:hover {
+    transform: translateY(-4px) scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  .roofing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(242, 92, 38, 0.2);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80%, 100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.text-tetralto-orange {
+  color: hsl(var(--tetralto-orange));
+}
+
+.text-tetralto-teal {
+  color: hsl(var(--tetralto-teal));
+}
+
+.text-tetralto-gold {
+  color: hsl(var(--tetralto-gold));
+}
+
+.text-tetralto-terracotta {
+  color: hsl(var(--tetralto-terracotta));
+}
+
+.bg-tetralto-orange {
+  background-color: hsl(var(--tetralto-orange));
+}
+
+.bg-tetralto-teal {
+  background-color: hsl(var(--tetralto-teal));
+}
+
+.bg-tetralto-gold {
+  background-color: hsl(var(--tetralto-gold));
+}
+
+.bg-tetralto-terracotta {
+  background-color: hsl(var(--tetralto-terracotta));
+}
+
+.border-tetralto-orange {
+  border-color: hsl(var(--tetralto-orange));
+}
+
+.border-tetralto-teal {
+  border-color: hsl(var(--tetralto-teal));
+}
+
+.border-tetralto-gold {
+  border-color: hsl(var(--tetralto-gold));
+}
+
+.border-tetralto-terracotta {
+  border-color: hsl(var(--tetralto-terracotta));
+}
+
+.hover\:bg-tetralto-orange:hover {
+  background-color: hsl(var(--tetralto-orange));
+}
+
+.hover\:bg-tetralto-teal:hover {
+  background-color: hsl(var(--tetralto-teal));
+}
+
+.hover\:bg-tetralto-gold:hover {
+  background-color: hsl(var(--tetralto-gold));
+}
+
+.hover\:text-tetralto-orange:hover {
+  color: hsl(var(--tetralto-orange));
+}
+
+.hover\:text-tetralto-teal:hover {
+  color: hsl(var(--tetralto-teal));
+}
+
+.hover\:text-tetralto-gold:hover {
+  color: hsl(var(--tetralto-gold));
+}
